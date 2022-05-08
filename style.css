@@ -1,0 +1,442 @@
+/*---------------------------------------------------------------------------*/
+/*------------------------------ GENERAL SETTING ----------------------------*/
+/*---------------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: lightblue;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+	position: relative;
+	width: 1200px;
+	min-width: 100px;
+	min-height: 1400px;
+	background: #fff;
+	margin: 20px;
+}
+
+.container .left_side {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	height: 1400px;
+	position: relative;
+	background: #003147;
+	padding: 20px;
+}
+
+/*-------------------------------LEFT SIDE-----------------------------------*/
+/*------------------------------ 1st section --------------------------------*/
+/*---------------------- Profil foto - Title - Sub title --------------------*/
+
+.profileText {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+
+.profileText .imgBx {
+	position: relative;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #fff;
+}
+
+.profileText .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.profileText h2 {
+	font-size: 1.5rem;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.4em;
+}
+
+.profileText h2 span {
+	font-size: 0.8em;
+	font-weight: 300;
+}
+
+/*-------------------------------LEFT SIDE-----------------------------------*/
+/*------------------------------ 2ed section --------------------------------*/
+/*------------------------------ CONTACT INFO -------------------------------*/
+
+.contactInfo {
+	padding-top: 40px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contactInfo:last-child {
+	border-bottom: none;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.contactInfo ul {
+	position: relative;
+}
+
+.contactInfo ul li {
+	position: relative;
+	list-style: none;
+	margin: 10px 40px;
+	cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+	display: inline-block;
+	width: 30px;
+	font-size: 18px;
+	color: #03a9f4;
+}
+
+.contactInfo ul li span {
+	color: #fff;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: #fff;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: #03a9f4;
+	margin-left: 10px;
+	transition: 0.3s;
+}
+
+/*-------------------------------LEFT SIDE-----------------------------------*/
+/*------------------------------ 3ed section --------------------------------*/
+/*------------------------------- EDUCATION ---------------------------------*/
+
+.contactInfo.education li {
+	margin-bottom: 15px;
+}
+
+.contactInfo.education ul {
+	margin-bottom: 50px;
+}
+
+.contactInfo.education h5 {
+	color: #03a9f4;
+	font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+	color: #fff;
+	font-weight: 500;
+}
+
+.contactInfo.education h4 {
+	color: #fff;
+	font-weight: 200;
+}
+
+/*-------------------------------LEFT SIDE-----------------------------------*/
+/*------------------------------ 4ed section --------------------------------*/
+/*-------------------------------- LANGUAGE ---------------------------------*/
+
+.contactInfo.language .percent {
+	position: relative;
+	width: 100%;
+	height: 6px;
+	background: #081921;
+	display: block;
+	margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+
+/*------------------------------- RIGHT SIDE---------------------------------*/
+/*------------------------------ General setting ----------------------------*/
+/*---------------------------------------------------------------------------*/
+
+.container .right_side {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	height: 1400px;
+	position: relative;
+	background: #fff;
+	padding: 40px;
+}
+
+p {
+	color: #333;
+}
+
+/*------------------------------- RIGHT SIDE---------------------------------*/
+/*--------------------------------1st section--------------------------------*/
+/*--------------------------------- PROFILE ---------------------------------*/
+
+.about {
+	margin-bottom: 50px;
+}
+
+.about:last-child {
+	margin-bottom: 0;
+}
+
+.title2 {
+	margin: 15px 0;
+	color: #003147;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*------------------------------- RIGHT SIDE---------------------------------*/
+/*--------------------------------2ed section--------------------------------*/
+/*------------------------------- EXPERIANCE --------------------------------*/
+
+.about .box {
+	position: relatve;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	margin: 20px 0;
+}
+
+.about .box .year_compagny {
+	min-width: 150px;
+}
+
+.about .box .year_compagny h5 {
+	text-transform: uppercase;
+	color: #848c90;
+	font-weight: 600;
+}
+
+.about .box .text h4 {
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-size: 16px;
+}
+
+/*------------------------------- RIGHT SIDE---------------------------------*/
+/*--------------------------------3ed section--------------------------------*/
+/*---------------------------- Professional Skills --------------------------*/
+
+.skills .box {
+	position: relatve;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills .box h4 {
+	text-transform: uppercase;
+	color: #2a7da2;
+	font-weight: 500;
+}
+
+.skills .box .percent {
+	position: relative;
+	width: 100%;
+	height: 10px;
+	background: #f0f0f0;
+}
+
+.skills .box .percent div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #03a9f4;
+}
+
+/*------------------------------- RIGHT SIDE---------------------------------*/
+/*--------------------------------4ed section--------------------------------*/
+/*-------------------------------- Interest ---------------------------------*/
+
+.end {
+	display: grid;
+	height: 200px;
+	color: #2a7da2;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.end .top {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	margin: 3px;
+	border-radius: 20px;
+}
+
+.end .top .iconed {
+	text-align: center;
+	font-size: 30px;
+	border-right: 2px solid #2a7da2;
+	margin-left: 3px;
+	color: #2a7da2;
+}
+
+.end .top .textend {
+	text-align: center;
+	padding: 5px;
+}
+
+.travel {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2a7da2;
+}
+
+.draw {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2a7da2;
+}
+
+.boat {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2a7da2;
+}
+
+.camera {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2a7da2;
+}
+
+.coffe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2a7da2;
+}
+
+.cinema {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2a7da2;
+}
+
+/*------------------------------- RESPONSIVE --------------------------------*/
+/*------------------------------ 2ed section --------------------------------*/
+/*------------------------------- EXPERIANCE --------------------------------*/
+
+@media (max-width: 1200px) {
+	.container {
+		margin: 10px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 830px) {
+	.about .box {
+		grid-template-columns: 1fr;
+	}
+
+	.about .box .text h4 {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 720px) {
+	.container {
+		height: 3100px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.end {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 605px) {
+	.container {
+		height: 3500px;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.end {
+		display: grid;
+		height: 100%;
+		color: #2a7da2;
+		grid-template-columns: 1fr;
+	}
+
+	.about .box {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 430px) {
+	.container .right_side {
+		height: 2000px;
+	}
+
+	.title {
+		font-size: 1.5em;
+	}
+
+	.container .left_side {
+		height: 1500px;
+	}
+
+	.about .box {
+		grid-template-columns: 1fr;
+		margin: 30px 0;
+	}
+
+	.about .box .text h4 {
+		margin-bottom: 10px;
+	}
+}
