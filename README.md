@@ -17,4 +17,4 @@ Pour cela, j'ai imaginé un CV sur lequel plusieurs boite serait utiliser pour l
 
 Voici le modèle que j'ai créé pour réaliser le CV. Avec ce modèle, je vais pouvoir pleinement utiliser le Grid dans chaque section :
 
-![Une maquette de CV](2.gif "Maquette du CV")
+![Une maquette de CV](maquette.png "Maquette du CV")
