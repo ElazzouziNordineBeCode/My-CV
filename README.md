@@ -4,7 +4,7 @@ My first CV
 
 ## Presentation du projet
 
--   Nom du projet : Curiculom Vitae
+-   Nom du projet : Curriculum vitae
 -   Autreur : [Nordine Becode](https://github.com/ElazzouziNordineBeCode) - [Repository](https://github.com/ElazzouziNordineBeCode/My-CV)
 -   Formation réaliser chez : [BeCode](https://becode.org/) à [BeCentral](https://becode.org/fr/a-propos-de-nous/nos-campus/bruxelles/) Bruxelles.
 -   Instructeur : [Mike](https://github.com/Mike00001)
